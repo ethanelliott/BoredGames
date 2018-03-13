@@ -6,7 +6,7 @@ body {
     font-family: sans-serif;
 }
 
-body.large-screen {
+body.main-screen {
     width:100vw;
     height: 100vh;
     overflow: hidden;
@@ -46,7 +46,42 @@ body.large-screen {
                 height: 12vw;
                 background: rgb(0, 86, 134);
                 animation: rainbow-border 5s infinite alternate ease-in-out, tilt-less 3s infinite alternate ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
+    }
+}
+
+body.game-screen-horse-race {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(7, 91, 3);
+    color:white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        width:100vw;
+        height: 100vh;
+    }
+}
+
+body.game-screen-horse-race-user {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(7, 91, 3);
+    color:white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        width:100vw;
+        height: 100vh;
     }
 }
