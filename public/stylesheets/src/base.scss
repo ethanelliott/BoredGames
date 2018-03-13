@@ -1,0 +1,52 @@
+@import "normalize";
+@import "fonts";
+@import "animations";
+
+body {
+    font-family: sans-serif;
+}
+
+body.large-screen {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    color:white;
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        width:100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33%);
+        grid-template-areas:"a b c d"
+                            "e z z f"
+                            "g h i j";
+        .title {
+            font-family: "hurry", sans-serif;
+            font-size: 5em;
+            animation: rainbow 5s infinite alternate ease-in-out, tilt 1s infinite alternate ease-in-out;
+            grid-area: z;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .icon {
+                width:12vw;
+                height: 12vw;
+                background: rgb(0, 86, 134);
+                animation: rainbow-border 5s infinite alternate ease-in-out, tilt-less 3s infinite alternate ease-in-out;
+            }
+        }
+    }
+}

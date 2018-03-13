@@ -1,0 +1,69 @@
+@mixin rainbow-shadow($colour) {
+    box-shadow:0 0 20px 5px $colour;
+}
+
+@keyframes rainbow {
+    0%   {
+        color: red;
+    }
+    20%  {
+        color: orange;
+    }
+    40%  {
+        color: yellow;
+    }
+    60%  {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: rotate(-5deg) scale(1.1);
+    }
+}
+
+@keyframes tilt-less {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: scale(0.99);
+    }
+    100% {
+        transform: rotate(-1deg) scale(1.01);
+    }
+}
+
+@keyframes rainbow-border {
+    0%   {
+        @include rainbow-shadow(red);
+    }
+    20%  {
+        @include rainbow-shadow(orange);
+    }
+    40%  {
+        @include rainbow-shadow(yellow);
+    }
+    60%  {
+        @include rainbow-shadow(green);
+    }
+    80% {
+        @include rainbow-shadow(blue);
+    }
+    100% {
+        @include rainbow-shadow(purple);
+    }
+}

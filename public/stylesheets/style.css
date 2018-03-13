@@ -1,8 +1,2 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+*{margin:0;padding:0}@font-face{font-family:hurry;src:url(./font/hurry_up.ttf)}@keyframes rainbow{0%{color:red}20%{color:orange}40%{color:yellow}60%{color:green}80%{color:blue}100%{color:purple}}@keyframes tilt{0%{transform:rotate(5deg)}50%{transform:scale(0.9)}100%{transform:rotate(-5deg) scale(1.1)}}@keyframes tilt-less{0%{transform:rotate(1deg)}50%{transform:scale(0.99)}100%{transform:rotate(-1deg) scale(1.01)}}@keyframes rainbow-border{0%{box-shadow:0 0 20px 5px red}20%{box-shadow:0 0 20px 5px orange}40%{box-shadow:0 0 20px 5px #ff0}60%{box-shadow:0 0 20px 5px green}80%{box-shadow:0 0 20px 5px blue}100%{box-shadow:0 0 20px 5px purple}}body{font-family:sans-serif}body.large-screen{width:100vw;height:100vh;overflow:hidden;background:black;color:white;font-size:10px;display:flex;justify-content:center;align-items:center}body.large-screen main{width:100vw;height:100vh;display:grid;grid-template-columns:repeat(4, 25%);grid-template-rows:repeat(3, 33.33%);grid-template-areas:"a b c d" "e z z f" "g h i j"}body.large-screen main .title{font-family:"hurry", sans-serif;font-size:5em;animation:rainbow 5s infinite alternate ease-in-out, tilt 1s infinite alternate ease-in-out;grid-area:z;display:flex;justify-content:center;align-items:center}body.large-screen main .item{display:flex;justify-content:center;align-items:center;flex-direction:column}body.large-screen main .item .icon{width:12vw;height:12vw;background:#005686;animation:rainbow-border 5s infinite alternate ease-in-out, tilt-less 3s infinite alternate ease-in-out}
+/*# sourceMappingURL=style.css.map */
